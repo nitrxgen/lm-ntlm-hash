@@ -15,6 +15,9 @@
  * This script relies primarily on one major function: openssl_encrypt supported
  * as early as PHP 4.0.5 and is currently fully supported as of PHP 8 and later.
  * 
+ * This function was written by @nitrxgen and was based on a more manual
+ * calculation. The openssl library proved to support the algorithms necessary
+ * and so the function was rewritten to utilise openssl.
 */
 
 function lm_hash(string $input = '', bool $double = true): string {
